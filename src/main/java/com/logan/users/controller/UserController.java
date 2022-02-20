@@ -10,4 +10,9 @@ public class UserController {
 	public String ping() {
 		return "User Service responding properly: " + System.currentTimeMillis();
 	}
+	
+	@GetMapping("/")
+	public String hello() {
+		return "User Service responding properly: " + System.currentTimeMillis();
+	}
 }
